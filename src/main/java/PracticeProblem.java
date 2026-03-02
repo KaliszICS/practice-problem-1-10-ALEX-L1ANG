@@ -39,7 +39,7 @@ public class PracticeProblem {
 	word = input.nextLine();
 	String wordcheck = word.toLowerCase();
 	boolean detection;
-	detection = wordcheck.contains("mango");
+	detection = wordcheck.equals("mango");
 	System.out.println(detection);
 	}
 
@@ -80,8 +80,10 @@ public class PracticeProblem {
 	Scanner input = new Scanner(System.in);
 	System.out.print("Input a sentence: ");
 	String sentence = input.nextLine();
-	System.out.println(sentence.toUpperCase());
-	System.out.println(sentence.toLowerCase());
+	sentence = sentence.toUpperCase();
+	System.out.println(sentence.trim());
+	sentence = sentence.toLowerCase();
+	System.out.println(sentence.trim());
 	}
 
 	public static void q7() {
